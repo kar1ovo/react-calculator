@@ -69,12 +69,10 @@ class Calculator extends React.Component {
       isDecimalAdded: false,
       isOperatorAdded: false,
     }));
-    console.log("calculate");
   };
 
   calculateToggle = () => {
     if (this.state.isOperatorAdded || !this.state.isStarted) {
-      console.log("return");
       return;
     }
     this.setState((state, props) => ({
